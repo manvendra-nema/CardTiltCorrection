@@ -20,9 +20,11 @@ from google.colab.patches import cv2_imshow
 
 # Load the image
 image = cv2.imread("id_card.jpg")
+
 corrected_image = correct_tilt(image)
 
 # Display the corrected image
+
 cv2_imshow(corrected_image)
 
 📌 Features
