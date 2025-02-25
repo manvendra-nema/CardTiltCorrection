@@ -68,8 +68,8 @@ def correct_perspective_distortion(image, template):
     return warped_image, H, projected_corners
 
 # Example usage:
-template = cv2.imread(r"D:\Downloads\debnath\Archive\addhar_temp.jpg")  # Provide your reference template image (correct orientation)
-image = cv2.imread(r"D:\Downloads\debnath\Archive\20th Feb\1000279565.jpg")     # Image to be deskewed
+template = cv2.imread(r"addhar_temp.jpg")  # Provide your reference template image (correct orientation)
+image = cv2.imread(r".\20th Feb\1000279565.jpg")     # Image to be deskewed
 if template is None or image is None:
     raise ValueError("Template and/or input image could not be loaded. Check the file paths.")
 
